@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <title>TechBook</title>
+    <link rel="icon" href="image/icon/feling.png">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <h2 class="logo">T</h2>
+            <ul class="icon-user">
+                <li><i class="fas fa-bell"></i></li>
+                <li><i class="far fa-envelope"></i></li>
+                <li><i class="far fa-play-circle"></i> </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="image/profile.JPG" alt="">
+            </div>
+        </div>
+        <!-- setting menu -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="image/profile.JPG" alt="">
+                    <div>
+                        <p>Tan Trung</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="image/icon/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="image/icon/setting.png" class="setting-icon" alt="">
+                    <a href="#">Setting & Privacy <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="image/icon/help.png" class="setting-icon" alt="">
+                    <a href="#">Help & Support <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="image/icon/display.png" class="setting-icon" alt="">
+                    <a href="#">Display & Accessility <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="setting-links">
+                    <img src="image/icon/logput.png" class="setting-icon" alt="">
+                    <a href="#">Logout <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- setting menu end-->
+    </nav>
+    <div class="container">
+        <!-- left sidebar -->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="#">
+                    <img src="image/icon/news.png" alt=""> Latest News
+                </a>
+                <a href="#">
+                    <!-- <i class="fas fa-user-friends"></i> Friends -->
+                    <img src="image/icon/icon-friend.png" alt=""> Friends
+                </a>
+                <a href="#">
+                    <img src="image/icon/group.png" alt=""> Group
+                </a>
+                <a href="#">
+                    <img src="image/icon/marketplace.png" /> Marketplace
+                </a>
+                <a href="#">
+                    <img src="image/icon/icon-watch.png" alt=""> Watch
+                </a>
+                <a class="seemore" href="#"><i class="fas fa-chevron-down"></i>See more</a>
+            </div>
+            <div class="shortcut-link">
+                <p>Your shortcuts</p>
+                <a href="#"> <img src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.6435-9/cp0/c52.0.64.64a/p64x64/55443479_2245658135498649_5076329629346693120_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=ac9ee4&_nc_ohc=aXHQYc4Pom0AX-jDVOd&_nc_ht=scontent-hkg4-1.xx&oh=ee6937cb974a23295e3e6703a308b2de&oe=61387529"
+                        alt="">Cộng đồng Front-end(HTML/CSS/JS) Việt Nam</a>
+                <a href="#">
+                    <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-9/cp0/c25.0.64.64a/p64x64/219559673_572942974153399_8358124059395550888_n.jpg?_nc_cat=1&ccb=1-4&_nc_sid=ac9ee4&_nc_ohc=uledoYBjZagAX_5QkGv&_nc_ht=scontent.fsgn5-5.fna&oh=e7bb3eb115aeef3a7b07cce5457d9262&oe=61388E28"
+                        alt="tuduydotpha"> Tư Duy Đột Phá
+                </a>
+                <a href="#">
+                    <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-9/cp0/c55.0.64.64a/p64x64/42896586_779223412408777_5188665680089579520_n.jpg?_nc_cat=104&ccb=1-4&_nc_sid=ac9ee4&_nc_ohc=WsQ29SgutGsAX-q34JC&_nc_ht=scontent-xsp1-2.xx&oh=97dd70b4de36d2f486966fce27d2f83b&oe=61366011"
+                        alt=""> Lập Trình Máy Tính - 186 - TDTU
+                </a>
+                <a href="#">
+                    <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/cp0/c31.0.64.64a/p64x64/89354762_1564492097040441_336115421801349120_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=ac9ee4&_nc_ohc=2NEk37EIgOgAX9_5Gqo&tn=Xa4R-mruUVd-uSgF&_nc_ht=scontent-xsp1-1.xx&oh=b8512e60943d5e1da3ffa356c1281568&oe=61394EAC"
+                        alt="ielt"> Từ Vựng IELTS Bỏ Túi (XGR)
+                </a>
+                <a class="seemore" href="#"><i class="fas fa-chevron-down"></i>See more</a>
+            </div>
+            <div class="footer-left">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Adchoices</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+                <p>More Techbook @2021 </p>
+            </div>
+        </div>
+        <!-- left sidebar end -->
+        <!-- main container -->
+        <div class="main-container">
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="image/icon/plus post-story.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story">
+                    <img src="https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.6435-1/cp0/p56x56/113467651_2808593756044848_6979147521036628793_n.jpg?_nc_cat=101&ccb=1-4&_nc_sid=7206a8&_nc_ohc=pb19NfnZXvAAX-3vlPJ&_nc_ht=scontent.fsgn5-1.fna&oh=ac9af48d54330cab7b7e9af6877070df&oe=613A42F9"
+                        alt="">
+                    <p>Dương Đức Trọng</p>
+                </div>
+                <div class="story">
+                    <img src="image/story/avtceofb.jpg" alt="">
+                    <p>Mark Zuckerberg</p>
+                </div>
+                <div class="story">
+                    <img src="image/story/avtkhanhduy.jpg" alt="">
+                    <p>Khánh Duy</p>
+                </div>
+                <div class="story">
+                    <img src="image/avtHuynhPhu.jpg" alt="">
+                    <p>Huỳnh Phú</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="image/profile.JPG" alt="">
+                    <div>
+                        <p>Tan Trung</p>
+                        <small>
+                            Public
+                            <i class="fas fa-caret-down"></i>
+                        </small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind Trung?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="image/icon/video.png" alt="video">Live Video</a>
+                        <a href="#"><img src="image/icon/phto.png" alt="video">Photo/Video</a>
+                        <a href="#"><img src="image/icon/feling.png" />Feling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am</span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-1/s320x320/117243650_1428840650648673_3304655198248540420_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=7206a8&_nc_ohc=CNbmg0ekMWAAX8PJlZ-&_nc_ht=scontent-xsp1-3.xx&oh=4865d1dad3f5bccb219285bea7f1ffbc&oe=613A0416"
+                            alt="">
+                        <div>
+                            <p>Hiền Nguyễn</p>
+                            <span>2h  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Anh chị em hội tụ <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-9/66940887_407083096574574_8592790302870208512_n.jpg?_nc_cat=104&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=pO_KV61_h5QAX8hyemK&_nc_ht=scontent-xsp1-2.xx&oh=693ff39e7a32025ef33ffb0c8e8014c5&oe=613981FF" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">1000k</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-1/s320x320/117243650_1428840650648673_3304655198248540420_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=7206a8&_nc_ohc=CNbmg0ekMWAAX8PJlZ-&_nc_ht=scontent-xsp1-3.xx&oh=4865d1dad3f5bccb219285bea7f1ffbc&oe=613A0416"
+                            alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.6435-1/p320x320/205972072_988292798636087_1270784230928029703_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=7206a8&_nc_ohc=sQCXAjYuItgAX-_Bu6Z&_nc_ht=scontent.fsgn5-6.fna&oh=36c9f9a31747b644731bc3a6b299ab46&oe=613B06F6"
+                            alt="">
+                        <div>
+                            <p>Nguyễn Hồ Hoàng Minh</p>
+                            <span>August 12 2021 , 10:28 am  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-9/67806107_904574873251599_5060257440818266112_n.jpg?_nc_cat=110&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=rbYRFfog8ZsAX8Ri_8L&_nc_ht=scontent-xsp1-2.xx&oh=6b65a15d5046c1479f54eaa7f8fa8a1d&oe=613A0055" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.6435-1/p320x320/205972072_988292798636087_1270784230928029703_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=7206a8&_nc_ohc=sQCXAjYuItgAX-_Bu6Z&_nc_ht=scontent.fsgn5-6.fna&oh=36c9f9a31747b644731bc3a6b299ab46&oe=613B06F6"
+                            alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/171497110_790384341904585_4763286735181586885_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=xiTl0zr9Zv4AX-GvTcX&_nc_ht=scontent-xsp1-3.xx&oh=c4243c9edfbb46db721de4c18718ab57&oe=613C4920" alt="">
+                        <div>
+                            <p>Phạm Yến</p>
+                            <span>26 May  <i class="fas fa-globe-americas"></i> </span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/186527016_816833612592991_711489085282996216_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=tyZdlrxYPjoAX8NxT-J&_nc_ht=scontent-xsp1-3.xx&oh=b994ccaa05c065e4111e1e2a9ac2d331&oe=613AA720" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="https://scontent-xsp1-3.xx.fbcdn.net/v/t1.6435-9/171497110_790384341904585_4763286735181586885_n.jpg?_nc_cat=109&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=xiTl0zr9Zv4AX-GvTcX&_nc_ht=scontent-xsp1-3.xx&oh=c4243c9edfbb46db721de4c18718ab57&oe=613C4920" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am  <i class="fas fa-globe-americas"></i></span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am</span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am</span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am</span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="image/profile.JPG" alt="">
+                        <div>
+                            <p>Tan Trung</p>
+                            <span>August 12 2021 , 10:28 am</span>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+                <p class="post-text">Hôm nay thật tuyệt nếu như có một chuyến đi đến Đà Lạt , hít thở không khí trong lành nơi đó <span></span> <a href="#">@AEHUYNHDE</a>
+                    <a href="#">@YoutubeChannel</a></p>
+                <img src="image/post-status/status 1.JPG" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="image/profile/like.png" alt="like">120</div>
+                        <div><img src="image/profile/comment.png" alt="like">12</div>
+                        <div><img src="image/profile/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="image/profile.JPG" alt="">
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <!-- main container end -->
+
+        <!-- right sidebar -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-even">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i>Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-even">
+                    <h3>30</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>HappyBirthDay</h4>
+                    <p>
+                        <i class="fas fa-birthday-cake"></i> Tan Trung</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <!--  -->
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="image/advertisement.png" class="sidebar-asd">
+            <div class="sidebar-title">
+                <h4>Contacts</h4>
+                <a href="#">Hide chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-1/s320x320/79515135_10111007623880301_5111576226921709568_n.jpg?_nc_cat=1&ccb=1-4&_nc_sid=7206a8&_nc_ohc=S7UKhJg8JtsAX9M8hVf&_nc_ht=scontent.fsgn5-5.fna&oh=855635c6ac533ea7803b044250fb5f8b&oe=6137C750"
+                        alt="Uyen">
+                </div>
+                <p>Mark Zuckerberg</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADIAMgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABgQHAQMIAgX/xAA0EAACAQMCAgkCAwkAAAAAAAABAgMABBEFIRIxBhMiQVFhcYGhMpEHFBUjJDNSorHR8PH/xAAYAQADAQEAAAAAAAAAAAAAAAACAwQBAP/EAB0RAAICAgMBAAAAAAAAAAAAAAABAhEDMSJCUTL/2gAMAwEAAhEDEQA/AKyX6z619nRrG41C4WG1QvJ4Cougac+rarHZIcGQntfy476t/SrawsbMwwK62yng7P1zsPPljn/yhSCFyy6L3CDhupFDkZCRdpseNT4dGntVJIYjv3G3rTJE1xcJ+42QhhznjbvrS1rfXD9lysediR80VwNWOR46ElG1CXhcEgAFe8e1PT0itpt5FIktvMFmTcO3f5U3aZfC/s1mxwuOy6+DVhji0SMVivVFcYc29EpJY5r+W2bEq2zAEcxkgHHnjNW90QtPztsrzIRDBtjOxO2Piqn6A2/W6oQfpJVX4jhcZzufarZsDq1hbSxQ2UXVs38V5Rw+Ww5/FDaqxiTehn4cDC44eWO6osvVKCGZQBzyaT5b7XbiwVZ7iCG4V2EsoLxoQGIAjRTnHDg5Y53+0KCx1eWeKK0veqe4kI60xZ7AUktwvnv4R70uyhR9HC5eEZCyoG82FR9FvGi6QiBTmC6iOVG4Drvn7Z+4pK07Rb5iGurm4knR2SbqYkOXHPJO4HeOW2MUxdEdHEvST9QYsJLGJon7g7NyzjbOM/eijsDIuNj9misZrFMJjm/otcvZ63bSA4jMiiQeK5yffwq+iWe1yXDKxLrw8ind8Vz9eTW8WoOto2Y1bZlP3q4uil9FeaWptr3r0tIxEyjHZJ3wfTG3lU6txsqi0pUY1y6jjOLWSa3updv2JUlyNuTAjw3+dq1abc/pJ/Nan18sjjhM3ECiDuGOY88eA9vV/BbXLtxgEy9kOpwy58DWg6UtpZ8E97c3Ayd5Cc/04HxQxKH4QNUuFv3kvrVOqizxNxsQJf8AHrTN+H9ws0F2I4jFGODCnuPapXfTbV5/zcjTMsCkqjMwTPiVLHJp86LWD2emGWdeGa5brGU81GNh/vjRxXITmlwpn1axRRTiM5XsAGvIgRkFxz9auz8J441/D0OqKGkvpy7AbsckZPjsAPaiisj8MPujQPqTykP9xTbwIyLxKp9RRRSI7LGQJUQ39upRSpuIwQRsRxCmx+VFFOgTZ9ojHnRRRRCj/9k="
+                        alt="Uyen">
+                </div>
+                <p>Bill Gates</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-1/s320x320/203169410_323815839462181_9000680701114891456_n.jpg?_nc_cat=1&ccb=1-4&_nc_sid=7206a8&_nc_ohc=YlxSb-349aoAX8LbcxU&_nc_ht=scontent.fsgn5-5.fna&oh=9604039ca40133e1c70a2de2bf6067fb&oe=61391D41"
+                        alt="Uyen">
+                </div>
+                <p>Hiếu PC</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.6435-1/p320x320/168827680_2421173414680125_7190274272612271409_n.jpg?_nc_cat=1&ccb=1-4&_nc_sid=7206a8&_nc_ohc=UgLP2GqDM7AAX9DBmKi&_nc_ht=scontent.fsgn5-5.fna&oh=68a75983737501063d003b74d6b0b101&oe=613848EF"
+                        alt="Uyen">
+                </div>
+                <p>Ngọc Trinh</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://scontent-xsp1-2.xx.fbcdn.net/v/t1.6435-1/c0.0.320.320a/p320x320/201096930_185836603546771_2730632532486577684_n.jpg?_nc_cat=102&ccb=1-4&_nc_sid=c6021c&_nc_ohc=8TQAyYwRgXgAX8W6Z9X&_nc_ht=scontent-xsp1-2.xx&oh=ee8af8d3f84c478f3b80dd8d86b8f506&oe=61383EE4"
+                        alt="Uyen">
+                </div>
+                <p>Khoa Pug</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4_400x400.jpg" alt="Uyen">
+                </div>
+                <p>Jeff Bezos</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="https://pbs.twimg.com/profile_images/1157313327867092993/a09TxL_1_400x400.jpg" alt=" Uyen">
+                </div>
+                <p>Cristiano Ronaldo</p>
+            </div>
+            <div class="online-list ">
+                <div class="online ">
+                    <img src="https://pbs.twimg.com/profile_images/1268653743752400896/u8NFwEWB_400x400.jpg " alt="Uyen ">
+                </div>
+                <p>Richard Ellis</p>
+            </div>
+            <div class="online-list ">
+                <div class="online">
+                    <img src="https://pbs.twimg.com/profile_images/1397467331954053127/SsK08wvl_400x400.jpg" alt="Uyen ">
+                </div>
+                <p>SHOPEE</p>
+            </div>
+        </div>
+        <!-- right sidebar end -->
+    </div>
+    <div class="footer">
+        <p>Copyright 2021 - TanTrung</p>
+    </div>
+    <script src="Myscript/js-my.js"></script>
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.15.1/css/all.css ">
+</body>
+
+</html>
